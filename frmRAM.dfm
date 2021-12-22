@@ -160,36 +160,6 @@ object frmTerceiroRAM: TfrmTerceiroRAM
         TabOrder = 0
       end
     end
-    object gridProcessos: TRzStringGrid
-      Left = 16
-      Top = 103
-      Width = 761
-      Height = 282
-      BevelOuter = bvRaised
-      BiDiMode = bdLeftToRight
-      ColCount = 1
-      DefaultColWidth = 756
-      DefaultRowHeight = 20
-      DrawingStyle = gdsClassic
-      FixedCols = 0
-      RowCount = 10
-      FixedRows = 0
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -13
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      GridLineWidth = 2
-      Options = [goVertLine, goHorzLine, goRangeSelect, goDrawFocusSelected, goRowSizing, goColSizing, goRowSelect]
-      ParentBiDiMode = False
-      ParentFont = False
-      TabOrder = 1
-      DisabledColor = clCream
-      FocusColor = clBtnFace
-      FrameColor = clFuchsia
-      FixedLineColor = clRed
-      LineColor = clRed
-    end
     object gbConsultaSAM: TGroupBox
       Left = 16
       Top = 391
@@ -366,7 +336,7 @@ object frmTerceiroRAM: TfrmTerceiroRAM
       Font.Name = 'Tahoma'
       Font.Style = []
       ParentFont = False
-      TabOrder = 3
+      TabOrder = 1
       object lblRAMResultadoRAM: TLabel
         Left = 32
         Top = 55
@@ -413,6 +383,24 @@ object frmTerceiroRAM: TfrmTerceiroRAM
         Enabled = False
         TabOrder = 1
       end
+    end
+    object gridProcessos: TStringGrid
+      Left = 16
+      Top = 103
+      Width = 760
+      Height = 282
+      ColCount = 1
+      DefaultColWidth = 755
+      FixedCols = 0
+      RowCount = 11
+      FixedRows = 0
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
     end
   end
   object OpenArquivoTxt: TOpenDialog

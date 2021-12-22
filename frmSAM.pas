@@ -5,8 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Buttons, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
-  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, Data.DB, Vcl.Grids, Vcl.DBGrids, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  RzGrids;
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf, Data.DB, Vcl.Grids, Vcl.DBGrids, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
 
 type
   TfrmSecundarioSAM = class(TForm)
@@ -16,7 +15,6 @@ type
     btnImportarSAM: TSpeedButton;
     btnVoltar: TSpeedButton;
     OpenArquivoTxt: TOpenDialog;
-    gridProcessos: TRzStringGrid;
     gbConsultaSAM: TGroupBox;
     txtConsultaCampo: TLabeledEdit;
     btnConsultar: TSpeedButton;
@@ -29,6 +27,7 @@ type
     lblQtdRAM: TLabel;
     txtQtdRAM: TEdit;
     txtQtdSAM: TEdit;
+    gridProcessos: TStringGrid;
     procedure btnVoltarClick(Sender: TObject);
     procedure btnImportarSAMClick(Sender: TObject);
     procedure btnConsultarClick(Sender: TObject);

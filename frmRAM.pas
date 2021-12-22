@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids, RzGrids, Vcl.ExtCtrls, Vcl.Buttons;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Grids, Vcl.ExtCtrls, Vcl.Buttons;
 
 type
   TfrmTerceiroRAM = class(TForm)
@@ -13,7 +13,6 @@ type
     btnImportarRAM: TSpeedButton;
     btnVoltarRAM: TSpeedButton;
     txtImportarRAM: TLabeledEdit;
-    gridProcessos: TRzStringGrid;
     gbConsultaSAM: TGroupBox;
     btnConsultar: TSpeedButton;
     txtConsultaCampo: TLabeledEdit;
@@ -27,6 +26,7 @@ type
     txtQtdSAM: TEdit;
     lblQtdRAM: TLabel;
     txtQtdRAM: TEdit;
+    gridProcessos: TStringGrid;
     procedure btnVoltarRAMClick(Sender: TObject);
     procedure btnImportarRAMClick(Sender: TObject);
     procedure btnConsultarClick(Sender: TObject);
